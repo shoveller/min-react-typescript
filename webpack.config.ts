@@ -24,8 +24,6 @@ const config: Configuration = {
 	},
 	devServer: {
 		publicPath: '/dist',
-		// contentBase: path.resolve(__dirname, 'dist'),
-		// contentBasePublicPath
 	}
 };
 
