@@ -14,10 +14,18 @@ const config: Configuration = {
 	},
 	resolve: {
 		extensions: [ '.tsx', '.ts', '.js' ],
+		alias: {
+			'src': path.resolve(__dirname, 'src')
+		}
 	},
-	entry: './index.ts',
+	entry: './index.tsx',
 	output: {
 		path: path.resolve(__dirname, 'dist'),
+	},
+	devServer: {
+		publicPath: '/dist',
+		// contentBase: path.resolve(__dirname, 'dist'),
+		// contentBasePublicPath
 	}
 };
 
